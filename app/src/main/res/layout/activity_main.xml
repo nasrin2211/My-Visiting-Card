@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:paddingTop="100dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!-- Replace with your photo -->
+
+
+    <!-- Name, Registration Number, etc. -->
+
+    <!-- Add other TextViews for roll, session, department, hall in a similar manner -->
+
+    <!-- Logos for email, mobile, etc. -->
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:contentDescription="my photo"
+        android:orientation="vertical"
+
+        android:src="@drawable/my_photo"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@+id/logo_container"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Name: Nasrin Akter Shimu"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/batch"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/photo"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/batch"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+
+        android:text="Batch: 49"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/registration_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+    <TextView
+        android:id="@+id/registration_number"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+
+        android:text="Reg.Number: 20190648614"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/session"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batch" />
+
+
+
+    <TextView
+        android:id="@+id/session"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Session:2019-2020"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/dept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registration_number" />
+
+    <TextView
+        android:id="@+id/dept"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Dept: Computer Science and engineering"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/hall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/session" />
+
+    <TextView
+        android:id="@+id/hall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Hall: Jahanara Imam hall"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dept" />
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="192dp"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- Replace with your email logo -->
+
+        <ImageView
+            android:id="@+id/mobile_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Mobile"
+            android:paddingTop="10dp"
+            android:src="@drawable/mobile_logo"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="164dp" />
+
+        <ImageView
+            android:id="@+id/email_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Email"
+            android:scaleType="centerCrop"
+            android:src="@drawable/email_logo"
+            tools:layout_editor_absoluteX="275dp"
+            tools:layout_editor_absoluteY="73dp"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/whatsapp_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="WhatsApp"
+            android:paddingTop="10dp"
+            android:src="@drawable/whatsapp_logo"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="164dp" />
+
+        <ImageView
+            android:id="@+id/discord_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Discord"
+            android:paddingTop="10dp"
+            android:src="@drawable/discord_logo"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="164dp" />
+
+        <ImageView
+            android:id="@+id/github_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Github"
+            android:paddingTop="10dp"
+            android:src="@drawable/github_logo"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="164dp" />
+        <!-- Replace with your mobile logo -->
+
+
+        <!-- Add other logos for Facebook, GitHub similarly -->
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
